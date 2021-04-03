@@ -7,13 +7,15 @@
 </head>
 <body>
 
-<div style="background: green;">100</div>
+<div class="myDiv" style="background: green;">100</div>
+<div></div>
 <img src="images/human1x.jpg" alt="">
 <img src="images/human2x.jpg" alt="">
 <img src="images/human3x.jpg" alt="">
 <script>
 
-
+let div = document.querySelector('.myDiv');
+div.html(div.offsetWidth);
 </script>
   
 </body>
