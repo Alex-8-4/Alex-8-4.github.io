@@ -58,15 +58,15 @@
 <img class="img-block" src="images/logo3.png" alt="">  
 <img class="img-block" src="images/logo.svg" alt="">  
 <div>======================</div>
-<picture>
-    <source srcset="images/logo1.png 360w, images/logo2.png 900w, images/logo3.png 2800w" sizes="50vw" >
-    <img src="images/logo1.png" alt="My default image">
-</picture>
-<div>======================</div>
 <img 
     srcset="images/logo2.png 2x, images/logo3.png 3x"
     src="images/logo1.png"     
 >
+<div>======================</div>
+<picture>
+    <source srcset="images/logo3.png 287w" sizes="50vw" >
+    <img src="images/logo1.png" alt="My default image">
+</picture>
 <div>======================</div>
 <picture>
     <source srcset="images/logo1.png " media="(max-width: 400px)">
@@ -76,7 +76,6 @@
 </picture>
 
 <script>
-
 let di = document.querySelector('.myDiv');
 let divw = document.querySelector('.myDiv').offsetWidth;
 di.innerHTML=divw;
