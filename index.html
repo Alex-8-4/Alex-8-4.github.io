@@ -4,14 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .image {
+      width: 320px;
+      height: 240px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
 
 <div class="myDiv" style="background: green;">100</div>
-<div></div>
-<img src="images/human1x.jpg" alt="">
-<img src="images/human2x.jpg" alt="">
-<img src="images/human3x.jpg" alt="">
+<div class="image"><img src="images/human1x.jpg" alt=""></div>
+
+<!-- <img src="images/human2x.jpg" alt="">
+<img src="images/human3x.jpg" alt=""> -->
 <script>
 
 let di = document.querySelector('.myDiv');
