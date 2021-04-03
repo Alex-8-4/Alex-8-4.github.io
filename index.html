@@ -1,1 +1,29 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<div class="myDiv" style="background: green;">100</div>
+<div class="image"><img src="images/human1x.jpg" alt=""></div>
+<div>
+  <img src="images/human1x.jpg" alt="">
+</div>
+<div class="image-2">
+  <img src="images/human3x.jpg" alt="">
+</div>
+
+<!-- <img src="images/human2x.jpg" alt="">
+<img src="images/human3x.jpg" alt=""> -->
+<script>
+
+let di = document.querySelector('.myDiv');
+let divw = document.querySelector('.myDiv').offsetWidth;
+di.innerHTML=divw;
+</script>
+  
+</body>
+</html>
