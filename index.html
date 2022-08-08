@@ -55,6 +55,7 @@
 </head>
 <body>
 <div class="myDiv" style="background: green;">Тут будет ширина окна</div>
+<div id="location">Тут будет геолокация</div>
 
 <div class="image"></div>  
 <div class="image-2"></div> 
@@ -96,6 +97,24 @@
 let div = document.querySelector('.myDiv');
 let divW = window.screen.width;
 div.innerHTML=divW;
+
+window.onload = getMyLocation;
+function getMyLocation() {
+  if (navigator.geolocation) {
+    // функция displayLocation - это обработчик, которому будет передаваться объект с данными о местоположении
+    navigator.geolocation.getCurrentPosition(displayLocation);
+  } else {
+    console.log('Геолокация не поддерживается');
+  }
+}
+
+function displayLocation(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let block = document.getElementById('location');
+  block.innerHTML = "Вы на широте: " + latitude + ", долготе: " + longitude; 
+}
+
 </script>
   
 </body>
