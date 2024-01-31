@@ -56,39 +56,48 @@
 <body>
 <div class="myDiv" style="background: green;">Тут будет ширина окна</div>
 <div id="location">Тут будет геолокация</div>
-
-<div class="image"></div>  
-<div class="image-2"></div> 
-<div class="image-3"></div>  
-<div class="image-4"></div>  
+<br>
+<div class="image"></div> x1
+<div class="image-2"></div> x2
+<div class="image-3"></div> x3
+<div class="image-4"></div> svg 
+<br>
+<br>
 <div>======================</div>
-<img class="img-block" src="images/logo1.png" alt="">  
-<img class="img-block" src="images/logo2.png" alt="">  
-<img class="img-block" src="images/logo3.png" alt="">  
-<img class="img-block" src="images/logo.svg" alt="">  
+<img class="img-block" src="images/logo1.png" alt=""> x1
+<img class="img-block" src="images/logo2.png" alt=""> x2
+<img class="img-block" src="images/logo3.png" alt=""> x3 
+<img class="img-block" src="images/logo.svg" alt=""> svg
+<br>
+<br>
 <div>======================</div>
 <img 
     srcset="images/logo2.png 2x, images/logo3.png 3x"
     src="images/logo1.png"     
->
-<div>======================</div>
+> x?
+<br>
+<br>
+<div>========= img ppi ==========</div>
 <img 
     srcset="images/goods2x.jpg 2x, images/goods3x.jpg 3x"
     src="images/goods.jpg"     
 >
-<div>======================</div>
+<br>
+<div>========== picture ppi && max-width =========</div>
 <picture>
     <source srcset="images/goods.jpg, images/goods2x.jpg 2x, images/goods3x.jpg 3x " media="(max-width: 400px)">
     <source srcset="images/logo1.png, images/logo2.png 2x, images/logo3.png 3x" media="(max-width: 900px)">
     <source srcset="images/human1x.jpg, images/human2x.jpg 2x, images/human3x.png 3x" media="(min-width: 901px)">
     <img src="images/logo1.png" alt="My default image">
 </picture>
-<div>======================</div>
+<br>
+<div>=========== picture sizes ===========</div>
 <picture>
     <source srcset="images/human1x.jpg 640w, images/human2x.jpg 960w, images/human3x.jpg 1920w" sizes="93px" >
     <img src="images/human-low.jpg" alt="My default image">
 </picture>
-<div>======================</div>
+<br>
+<div>========= cover || contain =============</div>
 <div class="container"></div>
 <br>
 
