@@ -1,0 +1,9 @@
+name: "CI"
+
+on: workflow_dispatch
+jobs: 
+  mydemojob: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: FooBar 
+        run: echo Hello!
