@@ -6,4 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: FooBar 
-        run: echo Hello!
+        run: |
+          pwd
+          ll
+          echo Hello!
