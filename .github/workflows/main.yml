@@ -8,4 +8,5 @@ jobs:
       - name: FooBar 
         run: |
           pwd
+          echo Work
           echo Hello!
