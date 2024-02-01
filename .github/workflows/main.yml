@@ -4,7 +4,8 @@ on: workflow_dispatch
 jobs: 
   mydemojob: 
     runs-on: ubuntu-latest
-    steps: 
+    steps:
+      - uses: actions/checkout@v2
       - name: FooBar 
         run: |
           pwd
