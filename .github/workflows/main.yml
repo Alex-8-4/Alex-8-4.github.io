@@ -11,7 +11,7 @@ jobs:
           pwd
           ls -la
           echo Hello!
-  testNOde: 
+  testNode:
     needs: [mydemojob]
     runs-on: ubuntu-latest
     strategy:
@@ -19,10 +19,10 @@ jobs:
         node: [ 14, 16, 18 ]
     name: Node ${{ matrix.node }} sample
     steps:
-      - name: testing
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: testing
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
+        run: node -v
       - run: npm -v
-      - run: node -v
