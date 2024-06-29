@@ -10,7 +10,9 @@ jobs:
         run: |
           pwd
           ls -la
-          echo ${{ toJSON(github) }}
+          echo Hello!
+      - name: show context
+        run: echo "${{ toJSON(github) }}"
   testNode:
     needs: [mydemojob]
     runs-on: ubuntu-latest
