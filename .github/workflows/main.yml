@@ -25,3 +25,5 @@ jobs:
           node-version: ${{ matrix.node }}
       - run: node -v
       - run: npm -v
+      - name: show-secret
+        run: echo ${{ secrets.MY_SECRET_TOKEN }}
