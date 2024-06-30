@@ -22,15 +22,6 @@ jobs:
     steps:
       - name: get repository code
         uses: actions/checkout@v4
-        # npm cache files are stored in `~/.npm` on Linux/macOS
-      - name: Cache node modules
-        id: cache-npm
-        uses: actions/cache@v3
-        env:
-          cache-name: cache-node-modules
-        with:
-          path: ~/.npm
-          key: node-modules-${{ hashFiles('**/package-lock.json') }}
       - name: testing
         uses: actions/setup-node@v4
         with:
